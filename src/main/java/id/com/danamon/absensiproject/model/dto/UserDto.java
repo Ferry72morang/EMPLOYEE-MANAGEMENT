@@ -9,7 +9,6 @@ public @Data class UserDto {
     private String name;
     private String designation;
     private String role;
-    @JsonIgnore
     private String password;
 
 }
