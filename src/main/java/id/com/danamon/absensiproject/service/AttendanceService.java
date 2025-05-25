@@ -27,6 +27,7 @@ public class AttendanceService {
 
         AttendanceDto result = new AttendanceDto();
         result.setUserId(attendance.getUser().getId());
+        result.setUserName(attendance.getUser().getName());
         result.setDate(attendance.getDate());
         result.setTapIn(attendance.getTapIn());
         result.setTapOut(attendance.getTapOut());
@@ -39,6 +40,7 @@ public class AttendanceService {
         return attendances.stream().map(att -> {
             AttendanceDto dto = new AttendanceDto();
             dto.setUserId(att.getUser().getId());
+            dto.setUserName(att.getUser().getName());
             dto.setDate(att.getDate());
             dto.setTapIn(att.getTapIn());
             dto.setTapOut(att.getTapOut());
