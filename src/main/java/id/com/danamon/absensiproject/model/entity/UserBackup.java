@@ -34,6 +34,9 @@ public class UserBackup implements UserDetails {
     @Column(name = "role")
     private String role; // "ADMIN" atau "USER"
 
+    @Column(name = "status")
+    private String status;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return List.of();

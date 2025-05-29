@@ -28,6 +28,7 @@ public class AuthenticationService {
         user.setName(userDto.getName());
         user.setDesignation(userDto.getDesignation());
         user.setRole(userDto.getRole());
+        user.setStatus(userDto.getStatus());
         return userRepository.save(user);
     }
 

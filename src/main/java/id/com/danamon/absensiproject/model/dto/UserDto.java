@@ -10,5 +10,6 @@ public @Data class UserDto {
     private String designation;
     private String role;
     private String password;
+    private String status;
 
 }
